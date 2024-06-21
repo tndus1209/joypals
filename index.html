@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joypals</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="section" id="section1">
+        <div class="video-background">
+            <video autoplay muted loop id="background-video">
+                <source src="img/logo(4).mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="logo" id="logo">
+            <img src="img/logo_white.png" alt="White Logo" id="logo-image">
+        </div>
+    </div>
+
+
+
+    <div class="section" id="section2">
+        <div class="logo2">
+            <img src="img/logo_gray(2).png" alt="Gray Logo">
+        </div>
+        <div class="content">
+            <p class="message">
+                조이펄즈(joypals)는 캐릭터 스튜디오입니다. <br> Joyful(기쁨을 주는)과 Pals(친구)의 합성어로 기쁘게 해주는 친구라는 의미를 가지고 있으며 <br>
+                조이펄즈만의 밝고 활기찬 캐릭터로 어른, 아이 상관없이 많은 사람에게 행복과 즐거움을 전하고자 합니다.<br>
+                그를 위해 언제나 웃음을 나눌 수 있는 조이펄즈가 될 수 있도록 노력하고 있습니다.
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <div class="section" id="section3">
+        <div class="gallery">
+            <ul class="cards">
+                <li><img src="img/사조.png" alt="사조" onclick="openBox('img/사조팝업_메인.png', '뜨거운 열정과 호기심으로 가득한 <br> 사조와 갈맹을 만나보세요.')"></li>
+                <li><img src="img/어글리프렌즈.png" alt="어글리프렌즈" onclick="openBox('img/어글리프렌즈.png', '못난이라는 프레임으로부터 자유롭고 <br> 당당한 어글리 프렌즈를 만나보세요.')"></li>
+                <li><img src="img/해길.png" alt="해길" onclick="openBox('img/해길_메인.png', '필요할 때 먼저 도움의 손길을 내미는 <br> 해길과 썬을 만나보세요.')"></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="popup" id="popup">
+        <div class="popup-content" id="popup-content">
+            <button class="close-button" onclick="closeBox()">✖</button>
+            <img id="popup-image" src="img/사조팝업_메인.png" alt="Popup Image">
+            <h1 id="popup-maintext">사조와 갈맹</h1>
+            <p id="popup-text">뜨거운 열정과 호기심으로 가득한 <br> 사조와 갈맹을 만나보세요.</p>
+            <img id="popup-serveimage" src="img/사조팝업_서브1.jpg" alt="Popup serve Image">
+            <p id="popup-text2">사조</p>
+            <img id="popup-serveimage2" src="img/사조팝업_서브2.jpg" alt="Popup serve Image">
+            <p id="popup-text3">갈맹</p>
+        </div>
+
+        <div class="popup-content2" id="popup-content2">
+            <button class="close-button" onclick="closeBox()">✖</button>
+            <img id="popup-image2" src="_img/어글리프렌즈.png" alt="Popup Image 2">
+            <h1 id="popup-maintext2">어글리프렌즈</h1>
+            <p id="popup-text4">못난이라는 프레임으로부터 자유롭고 <br> 당당한 어글리 프렌즈를 만나보세요.</p>
+            <img id="popup-serveimage3" src="img/어글리팝업_서브1.jpg" alt="Popup serve Image">
+            <p id="popup-text5">애플</p>
+            <img id="popup-serveimage4" src="img/어글리팝업_서브2.jpg" alt="Popup serve Image">
+            <p id="popup-text6">캐럿</p>
+            <img id="popup-serveimage5" src="img/어글리팝업_서브3.jpg" alt="Popup serve Image">
+            <p id="popup-text7">어니언</p>
+        </div>
+    
+        <div class="popup-content3" id="popup-content3">
+            <button class="close-button" onclick="closeBox()">✖</button>
+            <img id="popup-image3" src="img/해길_메인.png" alt="Popup Image 3">
+            <h1 id="popup-maintext3">해길과 썬</h1>
+            <p id="popup-text8">필요할 때 먼저 도움의 손길을 내미는 <br> 해길과 썬을 만나보세요.</p>
+            <img id="popup-serveimage5" src="img/해길팝업_서브1.jpg" alt="Popup serve Image">
+            <p id="popup-text9">해길</p>
+            <img id="popup-serveimage6" src="img/해길팝업_서브2.jpg" alt="Popup serve Image">
+            <p id="popup-text10">썬</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
+    <script src="script.js"></script>
+</body>
+</html>
